@@ -8,17 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\RulesEngineDemo.Domain\RulesEngineDemo.Domain.csproj" />
+    <ProjectReference Include="..\RulesEngineDemo.Persistence\RulesEngineDemo.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="Workflows\Discount.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Inputs\" />
   </ItemGroup>
 
 </Project>

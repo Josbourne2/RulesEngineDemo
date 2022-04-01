@@ -63,6 +63,7 @@
     <Build Include="dbo\Tables\Workflow.sql" />
     <Build Include="dbo\Tables\ScopedParam.sql" />
     <Build Include="dbo\Tables\Rule.sql" />
+    <Build Include="dbo\Tables\Workflows.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="RulesEngineDemoDB.publish.xml" />
